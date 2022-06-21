@@ -46,7 +46,7 @@ img {
 }
 
 #main-header {
-    border-bottom: 2px solid #56a79a;
+    border-bottom: 3px solid #56a79a;
 }
 
 #navbar {
@@ -78,7 +78,7 @@ img {
 
 #showcase {
     background: url(../images/develop.jpg) no-repeat center center;
-    border-bottom: 2px solid #56a79a;
+    border-bottom: 3px solid #56a79a;
     margin-bottom: 30px;
 }
 
@@ -126,6 +126,7 @@ img {
 #info {
     background: rgba(224, 0, 104, 0.644);
     border-top: 3px solid #56a79a;
+    border-bottom: 3px solid white;
     color: white;
 }
 
@@ -177,6 +178,12 @@ img {
     background: rgba(255, 255, 255, 0.811);
     color: #56a79a;
 
+}
+
+#page.contact {
+    background: linear-gradient(-45deg, #000000, #56a79a, #d5037a, #ffffff);
+    background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
 }
 
 #page {
@@ -233,7 +240,19 @@ img {
     text-transform: uppercase;
 }
 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
 
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 
 @media(max-width:800px) {
